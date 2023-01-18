@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewShoreAir</title>
+
+    <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.cs
+s" rel="stylesheet" integrity="sha384-
+KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+crossorigin="anonymous">
+<link rel="stylesheet" href="css/alertify.min.css" />
+</head>
+<body>
+      <div class="container">
+        <div class="row">
+          <h1>Lista de vuelos</h1>  
+        </div> 
+        <table class="table">
+          <thead class="table-dark">
+              <tr>
+                  <th>id</th>
+                  <th>origin</th>
+                  <th>destination</th>
+                  <th>price</th>
+              </tr>
+          </thead>
+        </table>
+      </div>
+
+    <div class="container mt-3 shadow-lg p-3 mb-5 rounded ">
+<div class="row">
+    <div class="col">
+      <input type="text" class="form-control" required autocomplete="on" placeholder="Origin" aria-label="Origin"
+      oninvalid="setCustomValidity('type your origin')" oninput="setCustomValidity('')">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control"  required autocomplete="on"  placeholder="Destination" aria-label="Destination"
+      oninvalid="setCustomValidity('type your destination')" oninput="setCustomValidity('')">
+    </div>
+  </div>
+  <button id="btnBuscarVuelo" type="button" class="btn btn-primary">Buscar Vuelo</button>
+  <a class="boton" href="http://localhost:8080/flights" target="_blank">Buscar Vuelo</a>
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+ integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+ crossorigin="anonymous"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-
+ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+ crossorigin="anonymous"></script>
+<script src="js/alertify.min.js"></script>
+
+ <script src="js/journey.js"></script>
+
+</body>
+</html> 
